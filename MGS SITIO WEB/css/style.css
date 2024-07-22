@@ -1,0 +1,259 @@
+
+/* Estilos para el botón flotante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px; /* Distancia desde el borde inferior */
+  right: 20px;  /* Distancia desde el borde derecho */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  background-color: #25D366; /* Color verde de WhatsApp */
+  border-radius: 50%; /* Hace el botón redondeado */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* Sombra */
+}
+
+.whatsapp-float img {
+  width: 60px; /* Tamaño del icono */
+  height: 60px; /* Tamaño del icono */
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos opcionales para el texto */
+.whatsapp-float .text {
+  display: none; /* Oculta el texto por defecto */
+}
+
+.whatsapp-float:hover .text {
+  display: block; /* Muestra el texto al pasar el mouse */
+  position: absolute;
+  left: -220px; /* Ajusta la posición del texto */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Ajusta esta distancia según tus necesidades */
+    margin-top: 20px;
+  }
+    .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); height: 800px;/* Fondo semitransparente para mejorar la legibilidad del texto */
+    padding: 15rem;
+    width: 100%;
+  }
+  .carousel-caption h5 {
+    font-size: 1rem; /* Ajusta el tamaño del título */
+  }
+  .carousel-caption p {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+  }
+       .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); height: 800px;/* Fondo semitransparente para mejorar la legibilidad del texto */
+    padding: 15rem;
+  }
+  .carousel-caption h5 {
+    font-size: 2rem; /* Ajusta el tamaño del título */
+  }
+  .carousel-caption p {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto */
+  }
+    .carousel-inner {
+      height: 500px; /* Ajusta esta altura según tus necesidades */
+    }
+
+    .carousel-item img {
+      height: 100%;
+      object-fit: cover; /* Ajusta el contenido de la imagen para que cubra todo el contenedor */
+    }
+    .navbar-custom {
+        justify-content: center; /* Center content within the navbar */
+      }
+
+      .mt-custom {
+      margin-top: 20px; /* Adjust this value as needed */
+    }
+    .text-container {
+        display: flex;
+        align-items: center;
+      }
+      .card-container {
+        margin-left: auto;
+      }
+      .text-container {
+        text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+      }
+      .card-img-top {
+        width: 100%; /* Asegura que la imagen se ajuste al ancho de la tarjeta */
+        height: auto; /* Mantiene la proporción de la imagen */
+      }
+      .card {
+        max-width: 35rem; /* Limita el ancho de la tarjeta */
+      }
+
+
+      .card-img-top {
+        width: 100%;
+        height: auto; /* Ajusta el tamaño de la imagen */
+      }
+      .text-content {
+        display: flex;
+        align-items: center; /* Centra verticalmente el texto en relación con la imagen */
+        height: 100%;
+      }
+      .text-content p {
+        margin-left: 20px; /* Espacio entre la imagen y el texto */
+      }
+
+      .embed-container {
+        position: relative;
+        padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 0 auto; /* Center horizontally */
+      }
+      .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .btn-custom {
+        background-color: #215592;
+        color: #fff;
+        display: flex;
+        align-items: center;
+      }
+      .btn-custom:hover {
+        background-color: #1a4470; /* Color de fondo al pasar el ratón */
+      }
+      .btn-custom svg {
+        margin-right: 8px; /* Espacio entre el icono y el texto */
+      }
+
+      .img-thumbnail {
+        max-width: 100%;
+        height: auto;
+      }
+      .col-img {
+        margin-bottom: 15px; /* Espacio inferior entre las columnas en pantallas pequeñas */
+      }
+      .caption {
+        text-align: center; /* Centra el texto debajo de la imagen */
+        margin-top: 10px; /* Espacio entre la imagen y el texto */
+      }
+      .img-effect {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .img-effect:hover {
+          transform: scale(1.05);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .no-bg-img {
+          width: 100%; /* Ajusta la imagen al tamaño de la columna */
+          height: auto; /* Mantiene las proporciones de la imagen */
+          display: block; /* Elimina espacio debajo de la imagen */
+        }
+        .right-column {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #f8f9fa; /* Color de fondo para visibilidad (opcional) */
+          padding: 20px; /* Espacio alrededor del contenido */
+        }
+        .image-text-container {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+        .image-text-container img {
+          width: 100%;
+          height: auto;
+          display: block;
+          border-radius: 8px; /* Opcional: agrega bordes redondeados a la imagen */
+        }
+        .overlay-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+          color: white;
+          padding: 121px;
+          transition: opacity 0.3s ease;
+          opacity: 0; /* Inicialmente oculto */
+        }
+        .image-text-container:hover .overlay-text {
+          opacity: 1; /* Muestra el texto cuando se pasa el ratón */
+        }
+        .col-md-6 {
+          padding: 15px;
+        }
+
+        .custom-column {
+          padding: 20px;
+          background-color: #7b7d80;
+          border-radius: 8px;
+          margin-bottom: 20px; /* Espacio entre filas en pantallas pequeñas */
+          text-align: center; /* Centra el texto */
+        }
+        .custom-column h4 {
+          color: #215592 ;
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        .custom-column h3 {
+          color:aliceblue ;
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+        .custom-column p {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #333;
+        }
+
+
+/* pie de pagina */
+        .col-md-4 {
+          padding: 10px; /* Espaciado opcional */
+        }
+        .col-md-4 img {
+          width: 100%;
+          height: auto;
+          object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+        }
+/* nuestros clientes */
+        .col-md-6 img {
+          width: 100%;
+          height: auto;
+          object-fit: cover; /* Ajusta las imágenes para que cubran el contenedor sin distorsión */
+        }
+
+/* COTIZAR */
+        .contact-form {
+          max-width: 600px;
+          margin: auto;
+          background-color: #f8f9fa;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
